@@ -140,7 +140,7 @@ footer{
 }
 
 footer h5{
-    font-size: 30px;
+    font-size: 18px;
     color: whitesmoke;
     text-shadow: 0 0 3px black;
 }
@@ -153,7 +153,7 @@ footer ul{
 }
 
 footer ul li a{
-    font-size: 25px;
+    font-size: 15px;
     color: whitesmoke;
     text-shadow: 0 0 3px black;
     text-decoration: none;
