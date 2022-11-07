@@ -132,7 +132,7 @@ article p{
 footer{
     background-color: grey;
     border-top: #F1D302 10px solid;
-    height: 220px;
+    height: 180px;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
