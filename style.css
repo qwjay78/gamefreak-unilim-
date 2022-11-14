@@ -12,6 +12,7 @@
 
 body{
     margin: 0;
+    background-color: rgb(225, 252, 252);
 }
 
 main{
@@ -20,13 +21,23 @@ main{
 }
 
 hr{
-    border-top: 1px dashed lightgray;
+    background-color: #F1D302;
+    height: 3px;
+    border: none;
+    width: 600px ;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+nav,section{
+    width: 90%;
+    margin-inline: auto;
 }
 
 /*==headings*/
 
 h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h1, h2{
@@ -41,11 +52,17 @@ header{
     flex-direction: column;
     align-items: center;
     line-height: 20px;
-    margin-top: 30px;
+    padding-top: 30px;
+    background-color: grey;
+    height: 180px;
+    border-bottom:#F1D302 10px solid ;
+    margin-bottom: 80px;
 }
 
 header p{
-    font-size: 30px;
+    font-size: 20px;
+    color: whitesmoke;
+    text-shadow: 0 0 3px black;
 }
 
 /*==nav*/
@@ -56,7 +73,7 @@ nav{
     margin-top: 30px;
     margin-bottom: 30px;
     align-items: center;
-    border: 8px solid #F1D302;
+    border: 6px solid #F1D302;
     border-radius: 20px;
     background-color: grey;
     padding-bottom: 16px;
@@ -69,6 +86,7 @@ nav ol{
     gap: 25px;
     justify-content: center;
     list-style-type: none;
+    padding-left: 0;
 }
 
 nav ol li{
@@ -91,7 +109,7 @@ nav ol li::marker{
 
 nav ol li a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     font-weight: bold;
 }
@@ -100,32 +118,139 @@ nav ol li a{
 nav p{
     color: whitesmoke;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 24px;
     text-shadow: 0 0 3px black;
 }
 
 /*==section*/
 
 section{
-    border: 5px solid black;
+    border: 6px solid #F1D302;
     border-radius: 20px;
     padding: 32px;
+    background-color: grey;
     
 }
 
 /*==article*/
 
+.article__part{
+    border-radius: 20px;
+    border: 4px solid #F1D302 ;
+    padding: 16px;
+    margin: 30px;
+    background-color: white ;
+}
+
 .article__chapeau{
     font-weight: bold;
 }
 
+.article__intro, .article__chapeau{
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 0 0 3px black;
+}
+
+
 h2{
-    font-size: 32px;
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h3{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 2px ;
+    border-bottom: solid darkorange;
+    border-top: solid darkorange;
+    padding: 10px;
+    background-color: #F1D302;;
+    box-shadow: 2px 2px 1px 0px #c5ab03;
+    margin-top: 10px;
 }
 
 article p{
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
 }
+
+strong{
+    border-bottom: #F1D302 2px solid;
+}
+
+.article__link{
+    text-align: center;
+}
+.article__link a{
+    color: black;
+}
+.article__link a:hover{
+    color: darkorange;
+}
+
+/*==sources*/
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside ul li a{
+    text-decoration: none;
+    color: #F1D302;
+    text-shadow: 0 0 3px black;
+}
+
+aside ul li a:hover{
+    color: darkorange;
+    text-shadow: 0 0 3px black;
+}
+
+h4{
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    text-shadow: 0 0 3px black;
+}
+
+/*==table*/
+table{
+    margin: auto;
+    width: 85%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td{
+    border: 2px solid grey;
+    padding: 8px;
+    text-align: center;
+}
+thead tr th{
+    background-color: #F1D302;
+}
+caption{
+    padding: 10px;
+    background-color: lightgray;
+    border: solid 2px lightgray;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.table__names{
+    border-left-color: lightgray;
+    font-weight: bold;
+}
+.table__fonctions{
+    border-right-color:lightgray;
+}
+
 
 /*==footer*/
 
@@ -161,3 +286,6 @@ footer ul li a{
     padding-bottom: 5px;
 }
 
+footer ul li a:hover{
+    padding-bottom: 8px;
+}
